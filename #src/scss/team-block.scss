@@ -1,0 +1,126 @@
+.team-block {
+	margin-bottom: 120px;
+
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
+}
+
+.team-container {
+
+}
+
+.team-row {
+
+	&_members {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+.team-col {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media (max-width: 1140px) {
+		flex-direction: column;
+	}
+}
+
+.team-header {
+	margin-bottom: 50px;
+
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
+	&__title {}
+}
+
+.team-card {
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: flex-start;
+
+	padding: 0 10px;
+	margin-bottom: 20px;
+
+	@media (max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+
+		margin-bottom: 50px;
+	}
+
+	&__photo-box {
+		flex: 0 1 230px;
+
+		@media (max-width: 1140px) {
+			flex: 0 1 290px;
+		}
+	}
+
+	&__photo {
+
+	}
+
+	&__text {
+		flex: 1 1 auto;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		font-family: "Graphik", sans-serif;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1.5;
+
+		background-color: $bg-color-main;
+
+		padding: 30px;
+
+		@media (max-width: 1140px) {
+			justify-content: flex-start;
+		}
+
+		@media (max-width: 767px) {
+			width: 290px;
+		}
+	}
+
+	&__name {
+		font-size: 25px;
+	}
+
+	&__prof {
+		font-weight: 400;
+	}
+
+	&__tel {
+		color: $dark-text;
+
+		padding: 3px 0;
+	}
+
+	&__tel:last-child {
+		margin-bottom: 0;
+	}
+
+	&__btn {
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
+
+		@media (max-width: 1140px) {
+			margin-top: 15px;
+		}
+	}
+
+	&__btn:hover {
+		color: $decor-color-red;
+		border-bottom: 1px solid $decor-color-red;
+	}
+}
+

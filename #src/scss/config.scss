@@ -1,0 +1,118 @@
+// Переменные
+
+$fontsize: 20px; // Основной размер шрифта
+$bg-color-main: #F8F6F5; // Основной цвет фона
+$bg-color-footer: #202020; // Основной цвет фона
+$light-text: #fff; // Светлый текст
+$dark-text: #272727; // Темный текст
+$gray-text: #676767; // Серый текст
+$decor-color-red: #DA3038; // Декоративный цвет
+$decor-color-green: #A8CA1E; // Декоративный цвет
+$prime-font: "Graphik", sans-serif; // Основной шрифт
+
+
+// Сетка и сброс стилей от Bootstrap (отключено)
+
+// Bootstrap compatible gutter variable => $gutter
+// $grid-gutter-width: 20px;
+// $gutter: $grid-gutter-width;
+
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"; // все стили Bootstrap
+//@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+//@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
+//@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid
+//@import "../../node_modules/bootstrap/scss/utilities/_sizing.scss"; // Optional Bootstrap Utilites
+
+
+
+
+/* Кастом обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;max-width:100%}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+
+// Основные стилевые настройки
+
+body {
+	font-family: $prime-font;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	color: $gray-text;
+	font-weight: 400;
+}
+
+.wrapper {
+	max-width: 1400px;
+
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.btn {
+	font-family: "Graphik", sans-serif;
+	font-weight: 700;
+
+	color: $light-text;
+	background-color: transparent;
+
+	padding: 25px 55px;
+
+	border: 2px solid $light-text;
+	border-radius: 50px;
+
+	transition: border 0.3s ease;
+}
+
+.btn:hover {
+	border: 2px solid $decor-color-red;
+}
+
+.title {
+	max-width: 350px;
+	font-family: "Graphik", sans-serif;
+	font-size: 40px;
+	line-height: 1.5;
+
+	color: $dark-text;
+
+	@media (max-width: 992px) {
+		max-width: 100%;
+		font-size: 30px;
+	}
+}
+
+.btn-top {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+
+	font-size: 12px;
+	font-weight: bold;
+
+	color: $light-text;
+	background-color: $decor-color-green;
+
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
+
+

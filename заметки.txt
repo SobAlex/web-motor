@@ -1,0 +1,110 @@
+BrowserSync - https://www.browsersync.io/docs/gulp
+File 
+Include - https://www.npmjs.com/package/gulp-fi...
+
+Del - https://www.npmjs.com/package/
+del
+Sass - https://www.npmjs.com/package/
+gulp-sass
+Autoprefixer - https://www.npmjs.com/package/gulp-au...
+
+Group CSS media-queries - https://www.npmjs.com/package/gulp-gr...
+
+Rename - https://www.npmjs.com/package/gulp-re...
+
+Clean CSS - https://www.npmjs.com/package/gulp-cl...
+
+Uglify ES - https://www.npmjs.com/package/gulp-ug...
+
+Babel - https://www.npmjs.com/package/gulp-babel
+
+Imagemin - https://www.npmjs.com/package/gulp-im...
+
+WEBP - https://www.npmjs.com/package/gulp-
+webp
+WEBP HTML - https://www.npmjs.com/package/gulp-we...
+
+WEBP CSS - https://www.npmjs.com/package/gulp-we...
+
+Fonter - https://www.npmjs.com/package/gulp-fo...
+
+ttf2woff - https://www.npmjs.com/package/gulp-tt...
+
+ttf2woff2 - https://www.npmjs.com/package/gulp-tt...
+
+SVG Sprite - https://www.npmjs.com/search?q=gulp-s...
+
+
+npm install webp-converter@2.2.3 --save-dev
+
+
+@include font("examplefont", "examplefont", "400", "normal");
+
+
+Converter recommended: https://www.fontsquirrel.com/tools/webfont-generator
+
+
+
+@font-face {
+  font-family: "Gerbera";
+  font-display: swap;
+  src: url("../fonts/Gerbera.woff") format("woff"), url("../fonts/Gerbera.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gerbera";
+  font-display: swap;
+  src: url("../fonts/Gerbera-Medium.woff") format("woff"), url("../fonts/Gerbera-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gerbera";
+  font-display: swap;
+  src: url("../fonts/Gerbera-Bold.woff") format("woff"), url("../fonts/Gerbera-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-display: swap;
+  src: url("../fonts/Graphik-Regular.woff") format("woff"), url("../fonts/Graphik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-display: swap;
+  src: url("../fonts/Graphik-Medium.woff") format("woff"), url("../fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-display: swap;
+  src: url("../fonts/Graphik-Bold.woff") format("woff"), url("../fonts/Graphik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-display: swap;
+  src: url("../fonts/Graphik-RegularItalic.woff") format("woff"), url("../fonts/Graphik-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@include font("Gerbera", "Gerbera", "400", "normal");
+@include font("Gerbera", "Gerbera-Medium", "500", "normal");
+@include font("Gerbera", "Gerbera-Bold", "700", "normal");
+@include font("Graphik", "Graphik-Regular", "400", "normal");
+@include font("Graphik", "Graphik-Medium", "500", "normal");
+@include font("Graphik", "Graphik-Bold", "700", "normal");
+@include font("Graphik", "Graphik-RegularItalic", "400", "italic");

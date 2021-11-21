@@ -1,0 +1,126 @@
+.footer {
+	color: $light-text;
+}
+
+.footer-container-top {
+	background-color: $bg-color-footer;
+
+	padding: 140px 0;
+
+	@media (max-width: 1070px) {
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+}
+
+.footer-row {
+
+}
+
+.footer-col {
+
+}
+
+.footer-inner {
+
+}
+
+.footer-list {
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 1070px) {
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__item {
+		max-width: 370px;
+
+		padding: 0 50px;
+
+		@media (max-width: 1280px) {
+				max-width: 310px;
+				padding: 0 29px;
+		}
+
+		@media (max-width: 1070px) {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer-item:nth-child(1),
+.footer-item:nth-child(2),
+.footer-item:nth-child(3) {
+	border-right: 1px solid #3d3d3d;
+}
+
+@media (max-width: 767px) {
+	.footer-item:nth-child(4) {
+		border-right: 1px solid #3d3d3d;
+	}
+}
+
+.footer-item {
+	font-family: "Gerbera" , sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+
+	&__link {
+		display: inline-block;
+		color: $light-text;
+
+		padding: 5px 0;
+	}
+
+	&__logo {
+
+	}
+
+	&__title {
+		display: inline-block;
+
+		font-family: 'Gerbera', sans-serif;
+		font-size: 11px;
+		font-weight: 700;
+
+		color: $decor-color-green;
+
+		padding-bottom: 15px;
+		margin-bottom: 22px;
+
+		border-bottom: 1px solid $decor-color-green;
+	}
+
+	&__address span {
+		display: inline-block;
+		padding: 5px 0;
+	}
+}
+
+.footer-container-bottom {
+	font-family: 'Gerbera', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #000000;
+
+	padding: 20px 0;
+}
+
+.footer-copy {
+	margin: 0;
+}
